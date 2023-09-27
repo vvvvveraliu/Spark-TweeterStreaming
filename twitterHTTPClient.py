@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 """
 This module is used to pull data from twitter API and send data to
 Spark Streaming process using socket. It acts like a client of
@@ -12,9 +9,6 @@ a connection established, it send streaming data to it.
 Usage:
   If used with dataproc:
     gcloud dataproc jobs submit pyspark --cluster <Cluster Name> twitterHTTPClient.py
-
-  Make sure that you run this module before you run spark streaming process.
-  Please remember stop the job on dataproc if you no longer want to stream data.
 
 """
 
