@@ -25,7 +25,7 @@ Finally, we use LDA to classify the data in the streaming.
    * wordCount - Calculte the count of 5 sepcial words for every 60 seconds
      
 * Resulting tables as follow:
-    <img src="https://github.com/vvvvveraliu/Spark-TweeterStreaming/blob/main/HashtagTble.png" width="300" height="400" />
+    <img src="https://github.com/vvvvveraliu/Spark-TweeterStreaming/blob/main/HashtagTable.png" width="300" height="400" />
     <img src="https://github.com/vvvvveraliu/Spark-TweeterStreaming/blob/main/wordCount.png" width="300" height="400" />
 
 
