@@ -14,14 +14,16 @@ Finally, we use LDA to classify the data in the streaming.
 
 ### Tasks: 
 1. Connecting to Twitter Stream to get tweets
-  * [Script]() is responsible for getting the tweets from Twitter API using Python and passes them to the Spark Streaming processing using socket. It acts like a client of
+* Script]() is responsible for getting the tweets from Twitter API using Python and passes them to the Spark Streaming processing using socket. It acts like a client of
     twitter API and a server of spark streaming. It open a listening TCP server socket, and listen to any connection from TCP client. After a connection established, it send
     streaming data to it.
 
 2. Building Spark Streaming Application
-  * [Script]() is spark streaming analysis process. It saves the outputs to BigQuery with the following tasks: 
-        * hashtagCount - Calculate the accumulated hashtags count sum from the beginning of the stream and sort it by descending order of the count
-        * wordCount - Calculte the count of 5 sepcial words for every 60 seconds
+* [Script](https://github.com/vvvvveraliu/TwitterAnalysis-SparkStreaming-Python/blob/main/twitterHTTPClient.py) is spark streaming analysis process. It saves the outputs to
+  BigQuery with the following tasks:
+  
+      * hashtagCount - Calculate the accumulated hashtags count sum from the beginning of the stream and sort it by descending order of the count
+      * wordCount - Calculte the count of 5 sepcial words for every 60 seconds
 
  
 
