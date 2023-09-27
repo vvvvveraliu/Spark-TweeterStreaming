@@ -25,8 +25,22 @@ Finally, we use LDA to classify the data in the streaming.
    * wordCount - Calculte the count of 5 sepcial words for every 60 seconds
      
 * Resulting tables as follow:
-    <img src="https://github.com/vvvvveraliu/Spark-TweeterStreaming/blob/main/HashtagTable.png" width="300" height="400" />
-    <img src="https://github.com/vvvvveraliu/Spark-TweeterStreaming/blob/main/wordCount.png" width="300" height="400" />
+
+<img src="https://github.com/vvvvveraliu/Spark-TweeterStreaming/blob/main/HashtagTable.png" width="300" height="400" />
+
+<img src="https://github.com/vvvvveraliu/Spark-TweeterStreaming/blob/main/wordCount.png" width="300" height="400" />
+
+
+3. Perform clustering on Stream data by LDA
+* [This Script](https://github.com/vvvvveraliu/TwitterAnalysis-SparkStreaming-Python/blob/main/LDA.ipynb) uses PySpark's LDA (Latent Dirichlet Allocation) algorithm to perform topic
+  modeling on the Stream Data. The output will include a "topicDistribution" column that represents the weight of each topic. Each row will have a distribution of values
+  across the 10 topics, indicating the degree to which each topic is presented.
+
+* Additionally, the LDA model is evaluated using the following two metrics:
+   * Log Likelihood -   measure of how well the LDA model explains the observed data. A higher log likelihood indicates that the model is a better fit for the data.
+   * Log Perplexity - measure of how well the LDA model generalizes to unseen data. Lower log perplexity values suggest that the model generalizes better to new data.
+ 
+
 
 
  
